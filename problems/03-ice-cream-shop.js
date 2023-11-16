@@ -15,6 +15,13 @@ iceCreamShop([], 'honey lavender'); // false
 
 function iceCreamShop(flavors, favorite) {
   // Your code here 
+  let res = flavors.shift()
+  if (res === favorite){
+    return true
+  }
+  else{
+    iceCreamShop(flavors, favorite)
+  }
 }
 
 
